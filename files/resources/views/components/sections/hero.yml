@@ -1,5 +1,6 @@
-# The visual editor's contract for sections/hero.html: each field maps to a
-# {token} in the html. Defaults fill any attribute the page doesn't pass.
+# The visual editor's contract for sections/hero.blade.html: each field maps to
+# a prop in the component's @props. Defaults fill any attribute the page doesn't
+# pass. Field names are camelCase, matching the props they fill.
 title: Hero
 description: The opening statement — badge, headline, supporting copy, and two actions
 fields:
@@ -7,33 +8,33 @@ fields:
         type: text
         label: Badge
         description: The small pill above the headline.
-        default: "Your site is live in preview"
+        default: "Welcome to your new site"
     heading:
         type: text
         label: Heading
-        default: "A blank page,"
-    heading_accent:
-        type: text
-        label: Heading accent
-        description: The lighter second half of the headline.
-        default: "full of possibility."
+        default: "Start with a Blank Canvas."
     body:
         type: textarea
         label: Supporting copy
-        default: "Start typing in the editor and watch this page update. Everything here is plain HTML and Tailwind — change anything."
-    button_text:
+        default: "DevDojo Sites gives you everything you need to build stunning, high-performance websites. Fully customizable. Totally yours."
+    background:
+        type: image
+        label: Background photo
+        description: Fills the right side of the hero and runs up behind the nav.
+        default: "/hero-background.jpg"
+    buttonText:
         type: text
         label: Primary button text
         default: "Get started"
-    button_link:
+    buttonLink:
         type: url
         label: Primary button link
-        default: "/"
-    secondary_text:
+        default: "https://devdojo.com/docs/sites/getting-started"
+    secondaryText:
         type: text
         label: Secondary button text
         default: "Read the docs"
-    secondary_link:
+    secondaryLink:
         type: url
         label: Secondary button link
-        default: "#"
+        default: "https://devdojo.com/docs"

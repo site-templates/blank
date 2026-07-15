@@ -2,17 +2,45 @@
 <!--
     Global nav component. Rendered by the layout on every page; the brand
     prop comes from nav.yml (editable in Visual mode's Layout tab).
+
+    It has no background of its own — it sits on the hero's photo, which shows
+    through from behind via the layout's wrapper. The mobile menu is a plain
+    <details> element, so the site still ships without a line of JavaScript.
 -->
-<header class="border-b border-zinc-100">
-    <nav class="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+<header class="py-6">
+    <div class="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 lg:px-8">
         <!-- href="/" always points to your site's root, in preview and when published -->
-        <a href="/" class="flex items-center gap-2 text-sm font-semibold tracking-tight">
-            <span class="inline-block h-2.5 w-2.5 rounded-full bg-zinc-900"></span>
-            {{ $brand }}
+        <a href="/" aria-label="Homepage" class="flex shrink-0 items-center gap-2">
+            <span class="block size-4 translate-y-px rounded-full bg-ink"></span>
+            <span class="text-xl font-semibold tracking-tight">{{ $brand }}</span>
         </a>
-        <div class="flex items-center gap-8 text-sm text-zinc-500">
-            <a href="/" class="link-underline transition duration-200 hover:text-zinc-900">Home</a>
-            <a href="#" class="link-underline transition duration-200 hover:text-zinc-900">About</a>
-        </div>
-    </nav>
+
+        <nav class="max-lg:hidden">
+            <ul role="list" class="flex items-center gap-x-10 text-sm">
+                <li><a href="/" class="text-ink">Home</a></li>
+                <li><a href="#" class="text-muted hover:text-ink">About</a></li>
+                <li><a href="#" class="text-muted hover:text-ink">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- The mobile menu: <details> handles the open/close state natively. -->
+        <details class="group relative lg:hidden">
+            <summary class="flex size-10 cursor-pointer list-none items-center justify-center rounded-lg text-ink hover:bg-ink/5 [&::-webkit-details-marker]:hidden">
+                <span class="sr-only">Open main menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" class="size-6 stroke-current group-open:hidden" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" class="size-6 stroke-current group-not-open:hidden" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+                </svg>
+            </summary>
+            <nav class="absolute top-full right-0 z-10 mt-2 w-48 rounded-(--radius) bg-white p-(--padding) shadow-lg ring-1 ring-ink/10 [--padding:--spacing(2)] [--radius:var(--radius-xl)]">
+                <ul role="list" class="text-base">
+                    <li><a href="/" class="flex rounded-[calc(var(--radius)-var(--padding))] px-3 py-2 text-ink hover:bg-ink/5">Home</a></li>
+                    <li><a href="#" class="flex rounded-[calc(var(--radius)-var(--padding))] px-3 py-2 text-muted hover:bg-ink/5">About</a></li>
+                    <li><a href="#" class="flex rounded-[calc(var(--radius)-var(--padding))] px-3 py-2 text-muted hover:bg-ink/5">Contact</a></li>
+                </ul>
+            </nav>
+        </details>
+    </div>
 </header>
