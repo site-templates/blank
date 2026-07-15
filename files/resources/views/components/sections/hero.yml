@@ -1,0 +1,39 @@
+# The visual editor's contract for sections/hero.html: each field maps to a
+# {token} in the html. Defaults fill any attribute the page doesn't pass.
+title: Hero
+description: The opening statement — badge, headline, supporting copy, and two actions
+fields:
+    badge:
+        type: text
+        label: Badge
+        description: The small pill above the headline.
+        default: "Your site is live in preview"
+    heading:
+        type: text
+        label: Heading
+        default: "A blank page,"
+    heading_accent:
+        type: text
+        label: Heading accent
+        description: The lighter second half of the headline.
+        default: "full of possibility."
+    body:
+        type: textarea
+        label: Supporting copy
+        default: "Start typing in the editor and watch this page update. Everything here is plain HTML and Tailwind — change anything."
+    button_text:
+        type: text
+        label: Primary button text
+        default: "Get started"
+    button_link:
+        type: url
+        label: Primary button link
+        default: "/"
+    secondary_text:
+        type: text
+        label: Secondary button text
+        default: "Read the docs"
+    secondary_link:
+        type: url
+        label: Secondary button link
+        default: "#"

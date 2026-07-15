@@ -1,0 +1,7 @@
+title: Footer
+description: The site-wide footer — appears on every page that uses the layout
+fields:
+    copyright:
+        type: text
+        label: Copyright line
+        default: "© 2026 My Site. Built with DevDojo Sites."

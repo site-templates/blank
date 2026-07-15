@@ -1,0 +1,14 @@
+{
+    "name": "Blank",
+    "dialect": "blade",
+    "description": "A clean, minimal starting point with a layout, nav, and footer already wired together.",
+    "icon": "\ud83d\udcc4",
+    "repo": "https://github.com/site-templates/blank",
+    "order": 1,
+    "category": "blank",
+    "theme": "light",
+    "accent": "#71717a",
+    "pages": [
+        "Home"
+    ]
+}
