@@ -1,6 +1,6 @@
 <!--
-    This is your homepage. It lives at pages/index.blade.html, so it's served at "/".
-    Add pages/about.blade.html and it becomes "/about" — no routing config needed.
+    This is your homepage. It lives at pages/index.blade.php, so it's served at "/".
+    Add pages/about.blade.php and it becomes "/about" — no routing config needed.
 
     The page is a list of *sections*: each section tag (an x-component) pulls a
     component from resources/views/components/ and fills its props with these
