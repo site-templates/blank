@@ -1,4 +1,4 @@
-@props(['brand' => 'My Site'])
+@props(['brand' => 'Website'])
 <!--
     Global nav component. Rendered by the layout on every page; the brand
     prop comes from nav.yml (editable in Visual mode's Layout tab).
@@ -12,7 +12,7 @@
         <!-- href="/" always points to your site's root, in preview and when published -->
         <a href="/" aria-label="Homepage" class="flex shrink-0 items-center gap-2">
             <span class="block size-4 translate-y-px rounded-full bg-ink"></span>
-            <span class="text-xl font-semibold tracking-tight">{{ $brand }}</span>
+            <span class="text-xl lowercase font-semibold tracking-tight">{{ $brand }}</span>
         </a>
 
         <nav class="max-lg:hidden">
