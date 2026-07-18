@@ -29,7 +29,7 @@ fields:
     buttonLink:
         type: url
         label: Primary button link
-        default: "https://devdojo.com/docs/sites/getting-started"
+        default: "https://devdojo.com/docs/projects/getting-started"
     secondaryText:
         type: text
         label: Secondary button text

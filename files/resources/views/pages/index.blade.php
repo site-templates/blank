@@ -14,7 +14,7 @@
         body="DevDojo Sites gives you everything you need to build stunning, high-performance websites. Fully customizable. Totally yours."
         background="/hero-background.jpg"
         buttonText="Get started"
-        buttonLink="https://devdojo.com/docs/sites/getting-started"
+        buttonLink="https://devdojo.com/docs/projects/getting-started"
         secondaryText="Read the docs"
         secondaryLink="https://devdojo.com/docs" />
 
