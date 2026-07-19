@@ -1,0 +1,23 @@
+title: Not found
+description: The 404 message — error code, headline, supporting copy, and a way back home
+fields:
+    code:
+        type: text
+        label: Error code
+        default: "404"
+    heading:
+        type: text
+        label: Heading
+        default: "This page is still blank."
+    body:
+        type: textarea
+        label: Supporting copy
+        default: "There's nothing at this address yet. The page may have moved, or it may never have existed — either way, the homepage is one click away."
+    buttonText:
+        type: text
+        label: Button text
+        default: "Back to the homepage"
+    buttonLink:
+        type: url
+        label: Button link
+        default: "/"
