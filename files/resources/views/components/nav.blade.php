@@ -16,7 +16,7 @@
         </a>
 
         <nav class="max-lg:hidden">
-            <ul role="list" class="flex items-center gap-x-10 text-sm">
+            <ul role="list" class="flex items-center gap-x-10 text-sm dark:rounded-full dark:bg-card/70 dark:px-4 dark:py-2 dark:ring-1 dark:ring-border dark:backdrop-blur-sm">
                 <li><a href="/" class="text-ink">Home</a></li>
                 <li><a href="#" class="text-muted hover:text-ink">About</a></li>
                 <li><a href="#" class="text-muted hover:text-ink">Contact</a></li>
@@ -25,7 +25,7 @@
 
         <!-- The mobile menu: <details> handles the open/close state natively. -->
         <details class="group relative lg:hidden">
-            <summary class="flex size-10 cursor-pointer list-none items-center justify-center rounded-lg text-ink hover:bg-ink/5 [&::-webkit-details-marker]:hidden">
+            <summary class="flex size-10 cursor-pointer list-none items-center justify-center rounded-lg text-ink hover:bg-ink/5 dark:bg-card/70 dark:ring-1 dark:ring-border dark:backdrop-blur-sm [&::-webkit-details-marker]:hidden">
                 <span class="sr-only">Open main menu</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" class="size-6 stroke-current group-open:hidden" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
@@ -34,7 +34,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
                 </svg>
             </summary>
-            <nav class="absolute top-full right-0 z-10 mt-2 w-48 rounded-(--radius) bg-white p-(--padding) shadow-lg ring-1 ring-ink/10 [--padding:--spacing(2)] [--radius:var(--radius-xl)]">
+            <nav class="absolute top-full right-0 z-10 mt-2 w-48 rounded-(--radius) bg-card p-(--padding) shadow-lg ring-1 ring-ink/10 [--padding:--spacing(2)] [--radius:var(--radius-xl)]">
                 <ul role="list" class="text-base">
                     <li><a href="/" class="flex rounded-[calc(var(--radius)-var(--padding))] px-3 py-2 text-ink hover:bg-ink/5">Home</a></li>
                     <li><a href="#" class="flex rounded-[calc(var(--radius)-var(--padding))] px-3 py-2 text-muted hover:bg-ink/5">About</a></li>

@@ -24,7 +24,7 @@
         <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
                 href="{{ $buttonLink }}"
-                class="flex items-center gap-2 rounded-lg bg-ink py-3 pr-3 pl-5 text-base font-medium text-white hover:bg-ink/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                class="flex items-center gap-2 rounded-lg bg-ink py-3 pr-3 pl-5 text-base font-medium text-background hover:bg-ink/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
                 {{ $buttonText }}
                 <svg viewBox="0 0 20 20" class="size-5 shrink-0 fill-current" aria-hidden="true">
                     <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd"/>

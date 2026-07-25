@@ -1,0 +1,10 @@
+{
+    "name": "Blank",
+    "theme": {
+        "palette": "paper",
+        "fonts": "playfair-inter",
+        "fonts_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap",
+        "appearance": "light",
+        "appearance_class": ""
+    }
+}

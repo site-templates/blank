@@ -13,6 +13,7 @@
         heading="Start with a Blank Canvas."
         body="DevDojo Sites gives you everything you need to build stunning, high-performance websites. Fully customizable. Totally yours."
         background="/hero-background.jpg"
+        darkBackground="/hero-background-dark.jpg"
         buttonText="Get started"
         buttonLink="https://devdojo.com/docs/projects/getting-started"
         secondaryText="Read the docs"

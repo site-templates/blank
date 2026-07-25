@@ -8,6 +8,10 @@
     "category": "blank",
     "theme": "light",
     "accent": "#6e6b60",
+    "themeable": true,
+    "palette": "paper",
+    "fonts": "playfair-inter",
+    "appearance": "light",
     "pages": [
         "Home"
     ]

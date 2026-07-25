@@ -3,16 +3,18 @@
     layout, so anything here applies to every page.
 */
 
-/* Theme tokens — these become Tailwind utilities: font-sans and font-display,
-   plus bg-canvas, text-ink, text-muted and the rest of the color utilities. */
+/*
+    Blank's classic color names alias onto the semantic theme tokens in
+    resources/css/theme.css. Change the palette or appearance in the builder's
+    Theme panel and every canvas, text tier, and surface follows. Fonts live
+    there too; this file keeps only Inter's preferred OpenType features.
+*/
 @theme {
-    --font-sans: 'InterVariable', ui-sans-serif, system-ui, sans-serif;
     --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'ss03';
-    --font-display: 'Playfair Display', ui-serif, Georgia, serif;
 
-    --color-canvas: #f3f2ef;
-    --color-ink: #16150f;
-    --color-muted: #6e6b60;
+    --color-canvas: var(--background);
+    --color-ink: var(--foreground);
+    --color-muted: var(--muted-foreground);
 }
 
 ::selection {

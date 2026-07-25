@@ -19,9 +19,14 @@ fields:
         default: "DevDojo Sites gives you everything you need to build stunning, high-performance websites. Fully customizable. Totally yours."
     background:
         type: image
-        label: Background photo
-        description: Fills the right side of the hero and runs up behind the nav.
+        label: Light background photo
+        description: Fills the right side of the hero in light mode and runs up behind the nav.
         default: "/hero-background.jpg"
+    darkBackground:
+        type: image
+        label: Dark background photo
+        description: Replaces the hero photo when the site uses dark appearance.
+        default: "/hero-background-dark.jpg"
     buttonText:
         type: text
         label: Primary button text
