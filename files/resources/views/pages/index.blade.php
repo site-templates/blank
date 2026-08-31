@@ -16,7 +16,9 @@
         darkBackground="/hero-background-dark.jpg"
         buttonText="Get started"
         buttonLink="https://devdojo.com/docs/projects/getting-started"
+        buttonTarget="_blank"
         secondaryText="Read the docs"
-        secondaryLink="https://devdojo.com/docs" />
+        secondaryLink="https://devdojo.com/docs"
+        secondaryTarget="_blank" />
 
 </x-layouts.main>

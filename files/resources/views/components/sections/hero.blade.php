@@ -6,8 +6,10 @@
     'darkBackground' => '/hero-background-dark.jpg',
     'buttonText' => 'Get started',
     'buttonLink' => '/',
+    'buttonTarget' => '_self',
     'secondaryText' => 'Read the docs',
     'secondaryLink' => '#',
+    'secondaryTarget' => '_self',
 ])
 <!--
     The homepage hero, as a *section component*: the props above are filled by
@@ -54,6 +56,7 @@
         <div class="mt-10 flex flex-wrap items-center gap-4">
             <a
                 href="{{ $buttonLink }}"
+                target="{{ $buttonTarget }}" rel="noopener"
                 class="flex items-center gap-2 rounded-lg bg-ink py-3 pr-3 pl-5 text-base font-medium text-background hover:bg-ink/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
                 {{ $buttonText }}
                 <svg viewBox="0 0 20 20" class="size-5 shrink-0 fill-current" aria-hidden="true">
@@ -62,6 +65,7 @@
             </a>
             <a
                 href="{{ $secondaryLink }}"
+                target="{{ $secondaryTarget }}" rel="noopener"
                 class="flex items-center gap-2 rounded-lg bg-card/70 py-3 pr-3 pl-5 text-base font-medium text-ink ring-1 ring-ink/10 hover:bg-card focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring">
                 {{ $secondaryText }}
                 <svg viewBox="0 0 20 20" class="size-5 shrink-0 fill-ink/40" aria-hidden="true">
