@@ -16,7 +16,7 @@
     <!-- The line below loads Tailwind and inlines the theme tokens plus your resources/css/site.css -->
     @vite(['resources/css/theme.css', 'resources/css/site.css'])
 </head>
-<body class="flex min-h-dvh flex-col bg-canvas font-sans text-ink antialiased">
+<body class="flex min-h-dvh flex-col bg-canvas font-sans text-ink antialiased" data-instant-navigation>
 
     <!--
         The nav and the page share this wrapper so that a section can paint a
